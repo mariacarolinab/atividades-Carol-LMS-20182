@@ -1,0 +1,54 @@
+#titulo, nav {
+    text-align: center;
+    color: black;
+}
+
+.minha-classe{
+    font-family: 'Courier New', Courier, monospace;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+}
+
+h3{
+    font-size: 18px;
+}
+
+#artigo1{
+    margin: 15px;
+    border: 5px black;
+    border-style: solid;
+    padding: 10px;
+}
+
+#artigo2{
+    margin: 15px; 
+    border: 5px gray;
+    border-style: groove;
+    padding: 11px;
+}
+
+#artigo3{
+    margin: 0.2vh;
+    border: 0.2vh;
+    border-style: hidden;
+    padding: 2vh;
+}
+
+#artigo4{
+    margin: 0.2vh;
+    border: 1vh teal;
+    border-style: ridge;
+    padding: 2vh;
+}
+
+#artigo5{
+    margin: 0.2vh;
+    border: 1vh rosybrown;
+    border-style: dotted;
+    padding: 2vh;
+}
+
+body{
+    background-image: linear-gradient(pink, grey);
+}
