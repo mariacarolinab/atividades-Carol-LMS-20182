@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 100%;
+        }
+
+        header > img{
+            height: 21%;
+            width: 21%;
+        }
+        .navegador-superior{
+            width: 100%;
+            height: 60px;
+            background-color: #4CAF50;
+            box-shadow: 2px 2px 2px #88888856;
+            overflow: hidden;
+        }
+
+        .dropdown{
+            float: left;
+        }
+        .dropdown .dropdown-button{
+            padding: 19px;
+        }
+        .dropdown-button{
+            font-size: 17px;
+            letter-spacing: 4px;
+            font-weight: 400;
+            color: white;
+            font-family: "Segoe UI",Arial,sans-serif;
+        }
+        li{
+            list-style: none;
+        }
+
+        .item{
+            font-family: Verdana,sans-serif;
+            font-size: 16px;
+            margin:  10px 20px 10px 20px;
+            padding: 1px 60px 1px 1px;
+        }
+        .item:hover{
+            background-color: rgb(197, 197, 197);
+            cursor: pointer;
+        }
+        .dropdown .dropdown-content{
+            position: absolute;
+            height: 240px;
+            background-color: rgb(224, 224, 224);
+            display: none;
+        }
+        
+        .dropdown-button:hover{
+            background-color: white;
+            color: black;
+        }
+        .menu-dropdown > li > h2{
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-weight: 400;
+            margin: 10px 60px 10px 20px;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown:hover .dropdown-button{
+            background-color: white; 
+            color: black;
+        }
+
+        .lateral{
+            width: 230px;
+            height: 650px;
+            box-shadow: 2px 2px 2px #88888856;
+            overflow: hidden;
+        }
+        .lateralItem{
+            font-size: 20px;
+            font-weight: 400;
+            color: black;
+            font-family: "Segoe UI",Arial,sans-serif;
+            padding: 15px 0 15px 15px;
+        }
+        .menuLateralItemNome{
+            padding: 1px 0 1px 15px;
+            width: 100%;
+            font-family: "Segoe UI",Arial,sans-serif;
+            font-size: 17.5px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .menuLateralItemNome:hover{
+            background-color: rgb(216, 216, 216)
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img class="img_cabecalho" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/W3Schools_logo.png" alt="">
+    </header>
+    <nav class="navegador-superior">
+        <ul class="menu">
+            <li>
+                <div class="dropdown dropdown1">
+                        <div class="dropdown-button">
+                            <h2>
+                                TUTORIALS
+                            </h2>
+                        </div>
+                        <div class="dropdown-content">
+                            <ul class="menu-dropdown">
+                                <li><h2>HTML and CSS</h2></li>
+                                <li class="item">Learn HTML</li>
+                                <li class="item">Learn CSS</li>
+                                <li class="item">Learn W3.CSS</li>
+                                <li class="item">Learn Colors</li>
+                            </ul>
+                        </div>
+                    </div>
+            </li>
+            <li>
+                <div class="dropdown dropdown2">
+                    <div class="dropdown-button">
+                        <h2>
+                            REFERENCES
+                        </h2>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul class="menu-dropdown">
+                            <li><h2>HTML</h2></li>
+                            <li class="item">HTML Tag Reference</li>
+                            <li class="item">HTML Event Reference</li>
+                            <li class="item">HTML Color Reference</li>
+                            <li class="item">HTML Attribute Reference</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown dropdown">
+                    <div class="dropdown-button">
+                        <h2>
+                            EXAMPLES
+                        </h2>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul class="menu-dropdown">
+                            <li><h2>HTML and CSS</h2></li>
+                            <li class="item">HTML Examples</li>
+                            <li class="item">CSS Examples</li>
+                            <li class="item">W3.CSS Examples</li>
+                            <li class="item">W3.CSS Templates</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <aside class="lateral">
+            <ul class="menuLateral">
+                <li class="menuItemLateral">
+                    <h2 class="lateralItem">
+                        HTML and CSS
+                    </h2>
+                    <ul class="menuLateralItem">
+                        <li class="menuLateralItemNome">
+                            Learn HTML
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn CSS
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn W3.CSS
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn Colors
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn Bootstrap 3
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn Bootstrap 4
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn Icons
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn Graphics
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn How To
+                        </li>
+                    </ul>
+                    <h2 class="lateralItem">
+                        Javascript
+                    </h2>
+                    <ul class="menuLateralItem">
+                        <li class="menuLateralItemNome">
+                            Learn Javascript
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn JQuery
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn AngularJS
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn JSON
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn AJAX
+                        </li>
+                        <li class="menuLateralItemNome">
+                            Learn W3.JS
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+</body>
+
+</html>
