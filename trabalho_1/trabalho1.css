@@ -54,7 +54,7 @@
     background-color: pink;
     position: relative;
     float: right;
-    box-shadow: 2px 5px 5px red;
+    box-shadow: 2px 5px 5px pink;
     background: linear-gradient(#b84754, pink)
 }
 .barraLateralDireita .musicas{
@@ -128,5 +128,22 @@
     }
     100%{
         transform: translate(20%, 0px) rotate(720deg);
+    }
+}
+
+@media screen and (max-width:600px){
+    .barraLateralEsquerda{
+        width: 100%;
+        
+    }
+    .barraLateralDireita{
+        width: 100%;
+
+    }
+    .conteudo{
+        width: 100%;
+    }
+    .menu{
+        width: 100%;
     }
 }
