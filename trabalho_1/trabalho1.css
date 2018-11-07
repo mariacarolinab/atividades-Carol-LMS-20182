@@ -10,7 +10,9 @@
     font-family: Arial;
     box-shadow: 2px 5px 5px rgba(8, 47, 54, 0.5)
 }
+
 .menu ul{
+    display: inline-block;
     list-style: none;
     position: relative;
 }
